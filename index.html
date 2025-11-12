@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeWave QR - QR Code Generator</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="4k_Video_Technology_Looped_Background_No_Copyright_Loop_Back.mp4" type="video/mp4">
+  </video>
+
+  <div class="container">
+    <header>
+      <h1>CodeWave QR</h1>
+      <p>Create and download your QR codes instantly.</p>
+    </header>
+
+    <main>
+      <div class="form">
+        <input type="text" id="qrText" placeholder="Enter text or URL...">
+        <button id="generateBtn">Generate QR</button>
+      </div>
+
+      <div id="qr-container">
+  <div id="qrCodeBox"></div>
+  <img id="qrImage" alt="Your QR Code">
+  <button id="downloadBtn" class="hidden">Download PNG</button>
+  <button id="pdfBtn" class="hidden">Download PDF</button>
+</div>
+
+    </main>
+  </div>
+
+</body>
+</html>
